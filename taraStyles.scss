@@ -1,0 +1,777 @@
+//Get bootstraps helper scss classes
+@import "../compulsary-task-2/scss/bootstrap.scss";
+
+//font import
+//TODO: Fix which font it uses
+@font-face {
+  font-family: Metropolis;
+  src: url(./fonts/Metropolis-Medium.otf);
+}
+
+//Root or *
+:root {
+  --white: #ffffff;
+  --body: #545d6d;
+  --dark: #202631;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --border-width: 1px;
+  --border-radius: 30px;
+}
+
+//reset and helpers
+body {
+  font-family: Metropolis;
+  line-height: 1.8;
+  color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: var(--dark);
+}
+
+a {
+  color: var(--body);
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--dark);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding-top: 170px;
+  padding-bottom: 170px;
+}
+
+//navbar
+.navbar {
+  position: absolute;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  z-index: 9999;
+}
+
+.navbar-brand img {
+  //position: absolute;
+  //width: 12%;
+  //top: -15%;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .navbar-link {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+//TODO: MAKE THE COLLAPSING BAR WHITE TODO: CHANGE THE HEADER POSITION TO RELATIVE OR GIVE NAV A BACKROUND WHEN EXPANDED
+.social-links a {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  color: black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    //Change color of collapsed navbar
+    background-color: black;
+  }
+}
+
+//hero: TODO: Change to your Black and white photo later
+#hero {
+  background: url(./images/mufasa-self-portrait.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#logo {
+  position: relative;
+  width: 700px;
+  right: 15%;
+  top: 15%;
+}
+
+#hero h1,
+#hero p,
+#hero i {
+  color: var(--white);
+}
+
+#hero i {
+  font-size: 2.5em;
+}
+
+#hero h1 {
+  font-weight: 900;
+  padding-top: 28%;
+}
+
+#hero p {
+  font-size: 18px;
+  max-width: 450px;
+}
+
+//btn
+.btn {
+  padding: 20px 44px;
+  border-width: 2px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+//intro
+.intro {
+  margin-bottom: 60px;
+}
+
+.intro .hr-line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--dark);
+  display: inline-block;
+}
+
+.intro h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  max-width: 500px;
+}
+
+//for the portfolio//
+.intro.intro-dark h1,
+.intro.intro-dark p {
+  color: white;
+}
+
+.intro.intro-dark .hr-line {
+  background-color: white;
+}
+
+//service
+.service {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 32px;
+  display: flex;
+}
+
+.service .icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--dark);
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: white;
+  border-radius: var(--border-radius);
+  margin-right: 16px;
+}
+
+.link-arrow {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.link-arrow i {
+  transition: all 0.4s ease;
+}
+
+.link-arrow:hover i {
+  transform: translate(5px, -5px);
+}
+
+//Bootstrap has a link-dark function//
+.link-arrow.link-darke {
+  color: var(--body);
+}
+.link-arrow.link-darke:hover {
+  color: white;
+}
+/////////////////////////////////////
+
+//work
+#portfolio {
+  background-color: var(--dark);
+}
+
+/*TODO: was not supposed to have #portfolio
+#portfolio a:hover {
+    color: var(--white);
+}
+FIXED: link-dark is a defined bootstrap key word
+*/
+
+.project h3 {
+  color: white;
+  margin-top: 24px;
+}
+
+.project .image-wrapper {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+.project .image-wrapper img {
+  border-radius: var(--border-radius);
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+}
+
+.project:hover .image-wrapper img {
+  transform: scale(1);
+}
+///////////////////////////////////////////////////////////////
+//Expanding Gallery
+//TODO: Change this colour
+//TODO: Change the height and width to cover full section
+//TODO: IMages grey unless hovering
+//TODO: Images slider with 6 plus total selections
+#expandingz .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profilz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-boxz {
+  //TODO: CHANGE THESE TO A PERCENTAGE INSTEAD
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(./images/favorite-shoots/Waliyah-Final-6.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  //Slow down all 0.2s transotions
+  transition: width 0.2s;
+}
+
+.img-boxz:nth-child(2) {
+  background: url(./images/favorite-shoots/Siba-Parking-Lot_115.JPG);
+  background-size: cover;
+  background-position: left;
+}
+
+.img-boxz:nth-child(3) {
+  background: url(./images/favorite-shoots/Patricia_204.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-boxz:nth-child(4) {
+  background: url(./images/favorite-shoots/Jamie-Jan_Tennis-Courts_152.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-boxz h5 {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  font-weight: 600;
+  left: 30px;
+  opacity: 0;
+  transition: bottom 0.2s, opacity 0.2s;
+}
+
+.img-boxz:hover {
+  width: 300px;
+  cursor: pointer;
+}
+
+.img-boxz:hover h5 {
+  opacity: 1;
+  bottom: 25px;
+}
+
+//Reusable classes
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  font-size: 1.5rem;
+  color: hsl(250, 8%, 15%); //var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 0.875rem; //var(--small-font-size);
+  margin-bottom: 3rem; //var(--mb-3);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+//reusable classes
+////////////////////////////////////////////////////////////////////
+//about
+#about img {
+  border-radius: var(--border-radius);
+}
+
+.about-data {
+  text-align: center;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-box {
+  background-color: hsla(0, 3%, 94%, 0.459); //vid 2 container color
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.5rem;
+}
+
+.about-icon {
+  font-size: 1.5rem;
+  //color: hsl(250, 66%, 75%); // first color
+  margin-bottom: 0.5rem;
+}
+
+.about-title {
+  font-size: 0.813rem; // small font size
+}
+
+.about-subtitle {
+  font-size: 0.75rem; // tiny font size
+}
+
+#about p {
+  margin-bottom: 2rem;
+  text-align: start;
+}
+
+////////////Qualifications/////////////////////////////////////////////////
+.qualification-tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem; //mb-2
+}
+
+.qualification-button {
+  font-size: 1.5rem; //h3 font size
+  font-weight: 600; //font-medium
+  cursor: pointer;
+}
+
+.qualification-button:hover {
+  color: var(--dark);
+  //first color
+}
+
+.qualification-icon {
+  font-size: 2rem; //h3 font size
+  margin-right: 0.25rem; //mb-0-25
+}
+
+.qualification-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qualification-title {
+  font-size: 0.938rem; //normal font size
+  font-weight: 500; //font-medium
+}
+
+.qualification-subtitle {
+  display: inline-block;
+  font-size: 0.813rem; //small-fint-size
+  margin-bottom: 1rem; //mb-1
+}
+
+.qualification-calendar {
+  font-size: 0.75rem; //smaller-fint-size
+  color: hsl(0, 0%, 40%); //text color light
+}
+
+.qualification-rounder {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: var(--dark);
+  //first color
+  border-radius: 50%;
+}
+
+.qualification-line {
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: var(--dark);
+  //first color
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  //display: none; //TODO: FIX ME
+}
+
+.qualification-active[data-content] {
+  display: block;
+}
+
+.qualification-button.qualification-active {
+  color: var(--dark); //first color
+}
+////////////Qualifications/////////////////////////////////////////////////
+
+////////////Skills/////////////////////////////////////////////////
+.skills-container {
+  row-gap: 0;
+}
+
+.skills-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem; //mb2-5
+  cursor: pointer;
+}
+
+.skills-icon,
+.skills-arrow {
+  font-size: 3.2rem;
+  color: var(--dark); //first color
+}
+
+.skills-icon {
+  margin-right: 0.75rem; //mb-0-75
+}
+
+.skills-title {
+  font-size: 1.125rem; //h3 font size
+}
+
+.skills-subtile {
+  font-size: 0.813rem;
+  color: hsl(250, 92%, 85%); //lighter
+}
+
+.skills-arrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+
+.skill-list {
+  row-gap: 1.5rem;
+  padding-left: 2.7rem;
+}
+
+.skills-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem; //mb-0-25
+}
+
+.skills-name {
+  //font-size: 0.938rem; //normal-font-size
+  font-weight: 500; //font-medium
+}
+
+.skills-bar,
+.skills-percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+
+.skills-bar {
+  background-color: hsl(0, 0%, 76%); //first-color-lighter
+}
+
+.skills-percentage {
+  display: block;
+  background-color: var(--dark); //first-color
+}
+
+.no-skill {
+  width: 0%;
+}
+
+.middle-skill {
+  width: 50%;
+}
+
+.average-skill {
+  width: 55%;
+}
+
+.decent-skill {
+  width: 60%;
+}
+
+.good-skill {
+  width: 80%;
+}
+
+.great-skill {
+  width: 90%;
+}
+
+.full-skill {
+  width: 99%;
+}
+
+.skills-close .skills-list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills-open .skills-list {
+  height: max-content;
+  margin-bottom: 0.25rem; //mb-0-25
+}
+
+.skills-open .skills-arrow {
+  transform: rotate(-180deg);
+  margin-bottom: 0.25rem; //mb-0-25
+}
+////////////Skills/////////////////////////////////////////////////
+
+//reviews
+#testimonials {
+  background-color: #f8f8f8;
+}
+
+.review {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 32px;
+  background-color: white;
+}
+
+.review .person {
+  display: flex;
+  align-items: center;
+}
+
+.review .person img {
+  width: unset;
+  border-radius: var(--border-radius);
+  margin-right: 16px;
+}
+
+.review .stars {
+  color: orange;
+}
+
+.review p {
+  border-bottom: var(--border-width) solid var(--border-color);
+  padding-bottom: 16px;
+}
+
+// contact
+
+#contact i {
+  color: black;
+  font-size: 2.2em;
+}
+
+#contact form {
+  padding: 32px;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+#contact form .form-control {
+  background-color: #f8f8f8;
+  border: transparent;
+  border-radius: var(--border-radius);
+  padding-left: 18px;
+}
+
+#contact form input.form-control {
+  height: 56px;
+}
+
+// insta posts
+#insta-posts {
+  position: relative;
+}
+
+.insta-follow {
+  width: 90px;
+  height: 90px;
+  background-color: var(--dark);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.insta-follow:hover {
+  background-color: white;
+}
+
+#insta-posts:hover .insta-follow {
+  opacity: 1;
+  top: 50%;
+}
+
+// footer
+.footer-top {
+  padding-bottom: 30px;
+  border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .social-links a {
+  border: var(--border-width) solid var(--border-color);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////GALLERY PAGE/////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+//Good code below
+#gall .container .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#gall .container .box .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+}
+
+#gall .container .box .dream img {
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+//TODO make font weight of "..Gallery" heading word less than weight of "Photo"
+
+//Make each column only show in one row
+@media only screen and (max-width: 769px) {
+  #gall .container .box {
+    flex-direction: column;
+  }
+
+  #gall .container .box .dream {
+    width: 100%;
+  }
+}
+///////////////////////////////////////////////////////////////////////////
+//TODO: Make table rounded. This does not work
+
+#price .align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: p5x;
+}
+
+//////////////////////////Favorites////////////////////////////////////////
+.favorite-btn {
+  position: relative;
+  right: -90%;
+  top: -40px;
+  background-color: rgba(0, 0, 0, 0.082);
+
+  width: 12px; //!important;
+  height: 13px;
+  border-radius: 20%;
+  //font-size: 22px;
+  //padding-left: 0px;
+  //padding-bottom: 8px;
+
+  color: white;
+}
+
+.is-favorite {
+  background-color: #29abe0 !important;
+  color: white !important;
+}
+
+.favBox {
+  padding: 32px;
+  //border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: rgba(243, 243, 243, 0.534);
+}
+
+//////////////////////////Favorite Button////////////////////////////////////////
+
+//////////////////////////Comments Section////////////////////////////////////////
+#commentSection ul {
+  padding: 32px;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+//////////////////////////Comments Section////////////////////////////////////////
