@@ -113,6 +113,10 @@ section {
   min-height: 100vh;
   background-position: center;
   background-size: cover;
+
+  h1 {
+    font-size: min(20vw, 75px);
+  }
 }
 
 #logo {

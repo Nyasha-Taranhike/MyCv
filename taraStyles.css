@@ -10869,6 +10869,9 @@ section {
   background-position: center;
   background-size: cover;
 }
+#hero h1, #hero .h1 {
+  font-size: min(20vw, 75px);
+}
 
 #logo {
   position: absolute;
