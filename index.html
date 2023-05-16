@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--MY TODOS:
-    ******SEEE GALLERY AND SAVE_LATER FILES FOR SAVE LATER FUNCTIONALITY****************
     FLOATING TOP BUTTON:     Button to advance to the top: Always on
-    COMPRESSE THE IMAGE SIZES FOR WEB: For Top Shoots Section
     IN SERVICES TAB MAKE A LIST OF WHATS INCLUDE IN THE SHOOT
     Change fonts
     add a slide bar to the favourite shoots
     HERO needs an image when the screen is too small
     Smaller Copyright footer font
+    Loading screen symbole
 
+    section navbar always at the bottom after
+
+    hyper3d sterescope on header image
     NOTE: TO down size images use 1080 px for the shortest side
 
     color change buttons on hover
@@ -26,10 +28,9 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!--Fonts-->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./taraStyles.css">
 
-    <!--Including jQuery TODO: Import jquery on all of the html files-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
 </head>
 
@@ -37,8 +38,8 @@
     <!--NAV-->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html">Tara
-                Mufasa</a>
+            <!--TODO: decrease font weight of span-->
+            <a class="navbar-brand" href="#hero">T<span>M</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -50,7 +51,9 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <!--TODO -->
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#qualifications">Qualifications</a>
                     </li>
                     <li class="nav-item">
@@ -93,22 +96,24 @@
         <div class="container">
             <div class="row">
                 <div data-aos="fade-up" class="col-lg-6">
-                    <img data-aos="fade-up" data-aos-delay="100" id="logo" data-aos="fade-up"
-                        src="./images/Tara rebranding/transparent white font/tara-rebrand-2-07-small.png" alt="">
+                    <!--id="logo"-->
+                    <div class="head-logo">
+                        <img data-aos="fade-up" data-aos-delay="100" id="logo" data-aos="fade-up"
+                            src="./images/Tara rebranding/svg/svg logo files [taramufasa]-07.svg" alt="mufasa logo">
+                    </div>
                     <p data-aos="fade-up">Hello, my name is Nyasha Taranhike. <br>
                         I am a Zimbabwean
-                        Software Engineer, Full Stack Web Developer, Portrait Photographer, Musician and Athlete.
+                        Software Engineer, Frontend Web Developer, Portrait Photographer/Videographer and an Athlete.
                         <br><br>
                         Based in Harare, Zimbabwe and Cape Town, South Africa.
-                        I would like to share my journey to you.
+                        I would like to share my journey with you.
                         <br>
                     </p>
-                    <a href="#portfolio" class="btn btn-outline-light" data-aos="fade-up" data-aos-delay="500">Explore
+                    <a href="#portfolio" class="btn btn-outline-light" data-aos="fade-up">Explore
                         My
                         Portfolio
                     </a>
                     <div class="container mt-2">
-                        <!--Todo increase size change color-->
                         <a href="https://www.linkedin.com/login" target="_blank"><i
                                 class="ri-linkedin-box-fill"></i></a>
                         <a href="https://github.com/Nyasha-Taranhike" target="_blank"><i class="ri-github-fill"></i></a>
@@ -164,16 +169,15 @@
                         </div>
 
 
-                        <p>Creativity was something that came to me but what I never understood was how to get the best
+                        <p>Creativity was something that I valued but what I never understood was how to get the best
                             out
                             of other people. How to grow their vision and help them become the best in their field.</p>
-                        <p class="pb-2">Software, Sports and Art helped me harness the ability to put someones vision to
+                        <p class="pb-2">Software, Sports and Art have helped me harness the ability to put someone's
+                            vision to
                             life, and
-                            speak
-                            their thoughts into existance. <br>
-                            As TARA MUFASA, I am here to fufil the vision of any creator that has been left out of
-                            mainstream styles of
-                            media</p>
+                            lauch
+                            their thoughts into existance.<br>
+                            I am here to fufil and validate the ideas of someone with a vision.</p>
                         <a href="#contact" class="btn btn-outline-dark float-end">Contact Me</a>
 
                     </div>
@@ -189,7 +193,6 @@
 
         <div class="intro mb-4 text-center pb-3">
             <div class="hr-line"></div>
-            <!--TODO: Make "Bit..." font-weight a bit less-->
             <h1 class="display-4">Skills</h1>
             <span class="section-subtitle">My techincal level</span>
         </div>
@@ -201,7 +204,6 @@
                 <!--Software skills-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <!--TODO use curly braces-->
                         <i class="ri-flask-line skills-icon"></i>
                         <div>
                             <h1 class="skills-title">Computer Science</h1>
@@ -319,11 +321,11 @@
 
                         <div class="skills-data">
                             <div class="skills-title">
-                                <h3 class="skils-name">CSS</h3>
-                                <span class="skills-number">60%</span>
+                                <h3 class="skils-name">SCSS/CSS</h3>
+                                <span class="skills-number">80%</span>
                             </div>
                             <div class="skills-bar">
-                                <span class="skills-percentage decent-skill"></span>
+                                <span class="skills-percentage good-skill"></span>
                             </div>
                         </div>
 
@@ -367,7 +369,7 @@
                                 <span class="skills-number">99%</span>
                             </div>
                             <div class="skills-bar">
-                                <span class="skills-percentage great-skill"></span>
+                                <span class="skills-percentage full-skill"></span>
                             </div>
                         </div>
 
@@ -407,11 +409,10 @@
                 <!--Backend skills-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <!--TODO use curly braces-->
                         <i class="ri-server-line skills-icon"></i>
                         <div>
                             <h1 class="skills-title">Backend developer</h1>
-                            <span class="skills-subtitle">Pending</span>
+                            <span class="skills-subtitle">(Pending)</span>
                         </div>
                         <i class="fa fa-angle-down skills-arrow"></i>
                     </div>
@@ -462,7 +463,6 @@
                 <!--Sport skills-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <!--TODO use curly braces-->
                         <i class="ri-basketball-line skills-icon"></i>
                         <div>
                             <h1 class="skills-title">Sports</h1>
@@ -509,7 +509,6 @@
                 <!--Music skills-->
                 <div class="skills-content skills-close">
                     <div class="skills-header">
-                        <!--TODO use curly braces-->
                         <i class="ri-music-2-line skills-icon"></i>
                         <div>
                             <h1 class="skills-title">Music</h1>
@@ -553,15 +552,21 @@
                 </div>
             </div>
 
-            <div>
-            </div>
         </div>
     </section>
+    <div class="container">
+        <div class="text-center">
+            <!--TODO update CV-->
+            <a href="./images/Downloadable/Curriculum-Vitae-(Nyasha Taranhike)-2018.docx" download="NT-CV-2018"
+                class="btn btn-outline-dark align-content-center">Download full CV</a>
+        </div>
+    </div>
+
 
 
     <!--Qualification: Academics and work-->
     <!--TODO on click of each education piece It shows all the cv information from that time and the references or link to proof-->
-    <section class="qualification section" data-aos="fade-up">
+    <section class="qualification section" data-aos="fade-up" id="qualifications">
 
         <div class="intro mb-4 text-center pb-3">
             <div class="hr-line"></div>
@@ -591,7 +596,7 @@
                             <span class="qualification-subtitle">Stellenbosch University</span>
                             <div class="qualification-calendar">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                2019 - (Dropped Out)
+                                2019 - (Unfinished)
                             </div>
                         </div>
 
@@ -620,8 +625,6 @@
                                 2016
                             </div>
                         </div>
-
-
 
 
                     </div><!--QUALIFICATION  3-->
@@ -659,9 +662,6 @@
                             </div>
                         </div>
 
-
-
-
                     </div>
                 </div>
 
@@ -670,11 +670,11 @@
                     <!--QUALIFICATION  1-->
                     <div class="qualification-data">
                         <div>
-                            <h3 class="qualification-title">Freelance Photography</h3>
+                            <h3 class="qualification-title">Photography/Videography</h3>
                             <span class="qualification-subtitle">Cape Town</span>
                             <div class="qualification-calendar">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                2019 - Present
+                                2019 - (Present)
                             </div>
                         </div>
 
@@ -682,7 +682,6 @@
                             <span class="qualification-rounder"></span>
                             <span class="qualification-line"></span>
                         </div>
-
 
                     </div>
 
@@ -692,22 +691,20 @@
 
                         <div>
                             <span class="qualification-rounder"></span>
-                            <span class="qualification-line"></span>
+                            <!--<span class="qualification-line"></span>-->
                         </div>
 
                         <div>
                             <h3 class="qualification-title">Modelling</h3>
-                            <span class="qualification-subtitle">My Friend Ned</span>
+                            <span class="qualification-subtitle">My Friend Ned (CPT)</span>
                             <div class="qualification-calendar">
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                2021 - Present
+                                2021 - 2022
                             </div>
                         </div>
 
-
-
-
-                    </div><!--QUALIFICATION  3-->
+                    </div>
+                    <!--QUALIFICATION  3
                     <div class="qualification-data">
                         <div>
                             <h3 class="qualification-title">Freelance Event Hosting</h3>
@@ -720,14 +717,13 @@
 
                         <div>
                             <span class="qualification-rounder"></span>
-                            <!--<span class="qualification-line"></span>-->
                         </div>
-
-
-                    </div>
+                    -->
 
                 </div>
+
             </div>
+        </div>
         </div>
     </section>
 
@@ -741,8 +737,8 @@
                     <div class="intro text-center">
                         <div class="hr-line"></div>
                         <h1 class="display-4">Services</h1>
-                        <p class="mx-auto">With many features and products coming soon, these are the products we
-                            currently have available. <br>
+                        <p class="mx-auto">This is a list of all the expertise that I offer.
+                            The list grows dayly as I master more skills. <br>
                             Feel free to create a bundle of all your favourites.</p>
                     </div>
                 </div>
@@ -754,10 +750,10 @@
                             <i class="ri-braces-fill"></i>
                         </div>
                         <div>
-                            <h5>Software Development</h5>
+                            <h5>Software Engineering</h5>
                             <p>With about 4 years of coding experience, I have a growing number of languages I am
                                 comfortable with.</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                            <a href="#skills" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -769,10 +765,10 @@
                         </div>
                         <div>
                             <h5>Photography</h5>
-                            <p>With about 4 years of creative experience, I have a growing number of ideas I would like
-                                to share.</p>
+                            <p>With about 4 years of creative experience, here is a quick summary of the journey
+                                photography has given me.</p>
                             <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html"
-                                class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                                target="_blank" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -783,10 +779,10 @@
                             <i class="ri-computer-fill"></i>
                         </div>
                         <div>
-                            <h5>Web Design</h5>
-                            <p>With about 4 months of frontend experience, I have a growing amount of projects I would
-                                like to develop.</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                            <h5>Web Development</h5>
+                            <p>With about 4 months of frontend experience so far, I continue to add to my developer
+                                portfolio.</p>
+                            <a href="#portfolio" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -798,9 +794,10 @@
                         </div>
                         <div>
                             <h5>Modelling</h5>
-                            <p>With about 2 years of experience, I have a growing amount of projects I would
+                            <p>With about 1 years of experience, I have a growing amount of projects I would
                                 like to collaborate in.</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                            <a href="https://www.instagram.com/taramufasa/?hl=en" target="_blank"
+                                class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
                         </div>
                     </div>
                 </div>
@@ -814,30 +811,32 @@
                             <h5>Social Media</h5>
                             <p>With about 4 years experience, I have a growing amount of projects I would
                                 like to build.</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
+                            <a href="https://www.instagram.com/tmufasaphotography/?hl=en" target="_blank"
+                                class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <!--<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="service">
                         <div class="icon">
                             <i class="ri-cake-2-fill"></i>
                         </div>
                         <div>
                             <h5>Event Hosting</h5>
-                            <p>With about 2 events succesful events thus far, I have a growing amount of projects I
-                                would like to create.</p>
+                            <p>With about 2 events succesful events thus far, I have much to learn but I am willing to
+                                contribute.</p>
                             <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
 
     <!--Projects-->
-    <!--TODO: MAKE IMAGES COLOUR WHEN HOVERING ELSE BLACK AND WHITE-->
+    <!--TODO: MAKE IMAGES COLOUR WHEN HOVERING ELSE BLACK AND WHITE
+                Remove porfolio id from the individual project imgs-->
     <section id="portfolio">
         <div class="container">
             <div class="row align-items-center justify-content-between" data-aos="fade-up">
@@ -845,7 +844,7 @@
                     <div class="intro intro-dark">
                         <div class="hr-line"></div>
                         <h1 class="display-4">My Portfolio</h1>
-                        <p>A quick summary of the 250+ shoots and 6+ Software projects I've had over the past 4 years.
+                        <p>A quick summary of the Software Projects and 250+ shoots I've had over the past 4+ years.
                             <br>
                             It has been a wonderful journey and I am grateful that I get to continue this journey with
                             you.
@@ -854,75 +853,132 @@
                 </div>
                 <div class="col-auto pb-3">
                     <!--TARGET Allows it to move to a new tab-->
-                    <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html"
-                        class="btn btn-outline-light" target="_blank">View More</a>
+                    <a href="https://github.com/Nyasha-Taranhike" class="btn btn-outline-light" target="_blank">View
+                        More</a>
                 </div>
             </div>
             <div class="row gy-5">
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up">
                     <div class="project">
-                        <div class="image-wrapper">
-                            <img src="./images/favorite-shoots/patricia_tennis_19.jpg" alt="PHOTO 1">
+                        <div class="white-back">
+                            <i class="fa-brands fa-html5" title="HTML"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
                         </div>
-                        <h3>Patricia</h3>
-                        <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html"
-                            class="link-arrow link-darke">Read More <i class="ri-arrow-right-up-line"></i></a>
+                        <div class="image-wrapper">
 
+                            <img src="./images/Screenshots/Screenshot-(36).png" alt="PHOTO 1">
+
+                        </div>
+                        <h3>This Website</h3>
+                        <i class="fa-brands fa-html5" title="HTML"></i>
+                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                        <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        <i class="fa-brands fa-sass" title="SCSS"></i>
+                        <a href="https://github.com/Nyasha-Taranhike/MyCv" target="_blank"
+                            class="link-arrow link-darke">Source Code<i class="ri-arrow-right-up-line"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="project">
+                        <div class="white-back">
+                            <i class="fa-brands fa-html5" title="HTML"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                        </div>
                         <div class="image-wrapper">
-                            <img src="./images/favorite-shoots/Pepjin-Final-5.jpg" alt="PHOTO 1">
+                            <img src="./images/Screenshots/photography-gallery-img.png" alt="PHOTO 1">
 
                         </div>
-                        <h3>Pepjin</h3>
-                        <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html" id="portfolio"
-                            class="link-arrow link-darke">Read More <i class="ri-arrow-right-up-line"></i></a>
+                        <h3>TM Website</h3>
+                        <i class="fa-brands fa-html5" title="HTML"></i>
+                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                        <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        <i class="fa-brands fa-sass" title="SCSS"></i>
+                        <a href="https://github.com/Nyasha-Taranhike/tara-mufasa-photography" target="_blank"
+                            id="portfolio" class="link-arrow link-darke">Source Code<i
+                                class="ri-arrow-right-up-line"></i></a>
 
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="project">
+                        <div class="white-back">
+                            <i class="fa-brands fa-html5" title="HTML"></i>
+                            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                            <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                            <i class="fa-brands fa-sass" title="SCSS"></i>
+                        </div>
                         <div class="image-wrapper">
                             <img src="./images/favorite-shoots/Siba-Final-4.jpg" alt="PHOTO 1">
                         </div>
-                        <h3>Siba</h3>
+                        <h3>Lasha Farming</h3>
+                        <i class="fa-brands fa-html5" title="HTML"></i>
+                        <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                        <i class="fa-brands fa-square-js" title="JavaScript"></i>
+                        <i class="fa-brands fa-sass" title="SCSS"></i>
                         <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html" id="portfolio"
-                            class="link-arrow link-darke">Read More <i class="ri-arrow-right-up-line"></i></a>
+                            class="link-arrow link-darke">Read More<i class="ri-arrow-right-up-line"></i></a>
 
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+
                     <div class="project">
+                        <div class="white-back">
+                            <i class="fa-brands fa-java" title="Java"></i>
+                            <i class="fa-sharp fa-solid fa-c" title="C Programming Language"></i>
+                            <i class="fa-brands fa-python" title="python"></i>
+                        </div>
                         <div class="image-wrapper">
                             <img src="./images/favorite-shoots/Sbu-Final-6.jpg" alt="PHOTO 1">
                         </div>
-                        <h3>Luca</h3>
+                        <h3>Uni Projects</h3>
+                        <i class="fa-brands fa-java" title="Java"></i>
+                        <i class="fa-sharp fa-solid fa-c" title="C Programming Language"></i>
+                        <i class="fa-brands fa-python" title="python"></i>
+
                         <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html" id="portfolio"
-                            class="link-arrow link-darke">Read More <i class="ri-arrow-right-up-line"></i></a>
+                            class="link-arrow link-darke">Source code<i class="ri-arrow-right-up-line"></i></a>
 
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="project">
-                        <div class="image-wrapper">
-                            <img src="./images/favorite-shoots/Luca_87.jpg" alt="PHOTO 1">
+                        <div class="white-back">
+                            <i class="fa fa-laptop-code" title="Photoshop and PremierPro"></i>
+
                         </div>
-                        <h3>Luca</h3>
-                        <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html" id="portfolio"
-                            class="link-arrow link-darke">Read More <i class="ri-arrow-right-up-line"></i></a>
+                        <div class="image-wrapper">
+                            <img src="./images/favorite-shoots/Pepjin-Final-5.jpg" alt="PHOTO 1">
+                        </div>
+                        <h3>Photography</h3>
+                        <i class="fa fa-laptop-code" title="Photoshop and PremierPro"></i>
+                        <i class="fa fa-camera-alt" title="DSLR/Mirrorless Photography"></i>
+                        <i class="fa fa-video-camera"></i>
+                        <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html" target="_blank"
+                            id="portfolio" class="link-arrow link-darke">Read More <i
+                                class="ri-arrow-right-up-line"></i></a>
 
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
                     <div class="project">
-                        <div class="image-wrapper">
-                            <img src="./images/favorite-shoots/Waliyah-Final-6.jpg" alt="PHOTO 1">
+                        <div class="white-back">
+                            <i class="fa fa-laptop-code" title="Photoshop and PremierPro"></i>
 
                         </div>
-                        <h3>Waliyah</h3>
-                        <a href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html" id="portfolio"
+                        <div class="image-wrapper">
+                            <img src="./images/Tara-Final-NWA-2a.jpg" alt="PHOTO 1">
+
+                        </div>
+                        <h3>Self Portraits</h3>
+                        <i class="fa fa-laptop-code" title="Photoshop and PremierPro"></i>
+                        <i class="fa fa-camera-alt" title="DSLR/Mirrorless Photography"></i>
+                        <i class="fa fa-video-camera"></i>
+                        <a href="https://www.instagram.com/taramufasa/?hl=en" id="portfolio"
                             class="link-arrow link-darke">Read More <i class="ri-arrow-right-up-line"></i></a>
 
                     </div>
@@ -941,6 +997,7 @@
                         <div class="hr-line"></div>
                         <h1 class="display-4">LET'S GET You<br>
                             Started</h1>
+                        <h5 class="mx-auto">***Note: This contact form is static. It is only for display.</h5>
                         <p class="mx-auto">For any queries, comments or messages please enter your details so we can
                             start the conversation.</p>
                     </div>
@@ -949,14 +1006,24 @@
             <div class="row">
                 <div class="col-5 mx-auto" data-aos="fade-up">
 
-                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-phone-fill"></i></a>
-                    <h1 style="display: inline-block">Call me</h1>
+                    <a href="#phone"><i class="ri-mail-fill"></i></a>
+                    <h5 style="display: inline-block">Email</h5>
                     <br>
-                    <a href="https://www.instagram.com/tmufasaphotography/?hl=en"><i class="ri-mail-fill"></i></a>
-                    <h1 style="display: inline-block">Email</h1>
+                    <a href="#phone"><i class="ri-phone-fill"></i></a>
+                    <h5 style="display: inline-block">Cell</h5>
+                    <br>
+                    <a href="#phone"><i class="ri-github-fill"></i></a>
+                    <h5 style="display: inline-block">Git</h5>
+                    <br>
+                    <a href="#phone"><i class="ri-instagram-fill"></i></a>
+                    <h5 style="display: inline-block">IG</h5>
+                    <br>
+                    <a href="#phone"><i class="ri-facebook-box-fill"></i></a>
+                    <h5 style="display: inline-block">FB</h5>
                     <br>
                     <a href="#phone"><i class="ri-map-pin-2-fill"></i></a>
-                    <h1 style="display: inline-block">Office</h1>
+                    <h5 style="display: inline-block">Base</h5>
+                    <br>
                     <br> <br>
                 </div>
                 <div class="col-7 mx-auto" data-aos="fade-up">
@@ -973,8 +1040,8 @@
                         <div class="col-lg-12">
                             <textarea class="form-control" placeholder="message" rows="5"></textarea>
                         </div>
-                        <div class="col-12">
-                            <button class="btn btn-dark">Send Message</button>
+                        <div class="col-12 send-btn text-end">
+                            <button class="btn btn-dark">Send</button>
                         </div>
                     </form>
                 </div>
@@ -990,6 +1057,7 @@
                     <div class="intro text-center">
                         <div class="hr-line"></div>
                         <h1 class="display-4">Client<br> critiques</h1>
+                        <h5>***PLEASE NOTE: These reviews are only for display.</h5>
                         <p class="mx-auto">A few honest words from the people I have had the pleasure of collaborating
                             with. Please feel to also leave any critiques or compliments as you please.</p>
                     </div>
@@ -998,7 +1066,7 @@
             <div class="row gy-4">
                 <div class="col-lg-6" data-aos="fade-up">
                     <div class="review">
-                        <p>Good reception,smart, great service and customer care.
+                        <p>Once again you never disappoint. Very Talented.
                         </p>
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto person">
@@ -1022,8 +1090,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="review">
-                        <p>The staff is professional and they make you feel at
-                            home.</p>
+                        <p>Amazing work I love it all.</p>
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto person">
                                 <img src="./images/avatar_4.jpg" alt="">
@@ -1046,7 +1113,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="review">
-                        <p>Great photography.
+                        <p>I like the work.
                         </p>
                         <div class="row justify-content-between align-items-center">
                             <div class="col-auto person">
@@ -1098,21 +1165,21 @@
 
 
 
-    <!--INsta Posts-->
+    <!--INsta Posts TODO-->
     <section class="py-0 w-100 row" id="insta-posts">
         <div class="col ms-4">
-            <!--IMG-->>
+            <img src="./images/Tara rebranding/svg/svg logo files [taramufasa]-04.svg" alt="">
         </div>
         <div class="col">
-            <!--IMG-->>
+            <img src="./images/Tara rebranding/svg/svg logo files [taramufasa]-04.svg" alt="">
         </div>
         <div class="col">
-            <!--IMG-->>
+            <img src="./images/Tara rebranding/svg/svg logo files [taramufasa]-04.svg" alt="">
         </div>
         <div class="col">
-            <!--IMG-->>
+            <img src="./images/Tara rebranding/svg/svg logo files [taramufasa]-04.svg" alt="">
         </div>
-        <a href="https://www.instagram.com/tmufasaphotography/?hl=en" class="insta-follow">
+        <a href="https://www.instagram.com/tmufasaphotography/?hl=en" class="insta-follow" target="_blank">
             <i class="ri-instagram-fill"></i>
         </a>
     </section>
@@ -1129,7 +1196,9 @@
                         </div>
                         <div class="mt-4">
                             <p id="phone" class="mb-0">PHONE</p>
-                            <h2>+263 00 00 00 00</h2>
+                            <h3>+263 771 081 246</h3>
+                            <p class="mb-0">What'sApp</p>
+                            <h5>+27 61 243 9916</h5>
                         </div>
                     </div>
                     <div class="col-auto">
@@ -1152,8 +1221,9 @@
                     </div>
                     <div class="col-auto">
                         <p class="mb-0">Shot and Designed by <a
-                                href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html">Tara
-                                Mufasa</a></p>
+                                href="https://nyasha-taranhike.github.io/tara-mufasa-photography/index.html">Nyasha
+                                Taranhike
+                            </a></p>
                     </div>
                 </div>
             </div>

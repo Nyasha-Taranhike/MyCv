@@ -1,5 +1,5 @@
 //Get bootstraps helper scss classes
-@import "../compulsary-task-2/scss/bootstrap.scss";
+@import "./scss/bootstrap.scss";
 
 //font import
 //TODO: Fix which font it uses
@@ -63,6 +63,12 @@ section {
   padding-bottom: 16px;
   z-index: 9999;
 }
+//TODO
+.navbar span {
+  //font-weight: 10;
+  color: white;
+  //right: -200px;
+}
 
 .navbar-brand img {
   //position: absolute;
@@ -97,7 +103,7 @@ section {
 @media (max-width: 992px) {
   .navbar {
     //Change color of collapsed navbar
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.61);
   }
 }
 
@@ -110,10 +116,30 @@ section {
 }
 
 #logo {
+  position: absolute;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  //max-width: fit-content;
+  //max-height: fit-content;
+  //mix-blend-mode: multiply;
+
+  //TODO: 1. clipping/masking: Crops the image. 2. MEDIA QUERY 3. Absolute for img/ Relative: absolute
+  //background: blue;
+  right: -20%;
+  top: 80px;
+}
+
+.head-logo {
   position: relative;
-  width: 700px;
-  right: 15%;
-  top: 15%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  //mix-blend-mode: multiply;
+  //background-color: red;
+  //right: 17%;
+  //top: 15%;
 }
 
 #hero h1,
@@ -222,6 +248,14 @@ section {
 .link-arrow.link-darke:hover {
   color: white;
 }
+
+//Highlight the small software apps on hover
+#portfolio .fa:hover {
+  color: white;
+}
+#portfolio .fa-brands:hover {
+  color: white;
+}
 /////////////////////////////////////
 
 //work
@@ -241,6 +275,10 @@ FIXED: link-dark is a defined bootstrap key word
   margin-top: 24px;
 }
 
+.project {
+  // overflow: hidden;
+}
+
 .project .image-wrapper {
   overflow: hidden;
   border-radius: var(--border-radius);
@@ -255,6 +293,39 @@ FIXED: link-dark is a defined bootstrap key word
 .project:hover .image-wrapper img {
   transform: scale(1);
 }
+
+#portfolio i {
+  //color: white;
+}
+
+.white-back {
+  position: relative;
+  //border-radius: var(--border-radius);
+
+  //display: block;
+  //justify-content: space-between;
+  //padding-left: 5%;
+  //padding-right: 5%;
+
+  //overflow: hidden;
+  font-size: 40px;
+  height: 1.75em;
+  color: white;
+  text-align: center;
+  z-index: 9999;
+  top: 350px;
+
+  background-color: rgba(0, 0, 0, 0.644);
+  cursor: pointer;
+}
+
+.icon-content {
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%);
+}
+
 ///////////////////////////////////////////////////////////////
 //Expanding Gallery
 //TODO: Change this colour
@@ -639,6 +710,13 @@ FIXED: link-dark is a defined bootstrap key word
   height: 56px;
 }
 
+#contact .send-btn {
+  //overflow: hidden;
+  button {
+    max-width: 140px;
+  }
+}
+
 // insta posts
 #insta-posts {
   position: relative;
@@ -679,6 +757,10 @@ FIXED: link-dark is a defined bootstrap key word
 .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
+
+  p {
+    font-size: small;
+  }
 }
 
 footer .social-links a {

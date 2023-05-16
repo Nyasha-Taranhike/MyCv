@@ -73,4 +73,10 @@ $(document).ready(function () {
   $(".fav-heading").mouseover(function () {
     $(".accordion").slideToggle();
   });
+
+  $(".white-back").css("display", "none");
+  //Hide black bar with software apps on portfolio
+  $(".image-wrapper").mouseover(function () {
+    $(".white-back").slideToggle();
+  });
 });

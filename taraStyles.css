@@ -10831,6 +10831,10 @@ section {
   z-index: 9999;
 }
 
+.navbar span {
+  color: white;
+}
+
 .navbar-brand {
   font-size: 28px;
   text-transform: uppercase;
@@ -10856,7 +10860,7 @@ section {
 
 @media (max-width: 992px) {
   .navbar {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.61);
   }
 }
 #hero {
@@ -10867,10 +10871,20 @@ section {
 }
 
 #logo {
+  position: absolute;
+  overflow: hidden;
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  right: -20%;
+  top: 80px;
+}
+
+.head-logo {
   position: relative;
-  width: 700px;
-  right: 15%;
-  top: 15%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
 }
 
 #hero h1, #hero .h1,
@@ -10976,6 +10990,14 @@ section {
   color: white;
 }
 
+#portfolio .fa:hover {
+  color: white;
+}
+
+#portfolio .fa-brands:hover {
+  color: white;
+}
+
 #portfolio {
   background-color: var(--dark);
 }
@@ -11004,6 +11026,18 @@ FIXED: link-dark is a defined bootstrap key word
 
 .project:hover .image-wrapper img {
   transform: scale(1);
+}
+
+.white-back {
+  position: relative;
+  font-size: 40px;
+  height: 1.75em;
+  color: white;
+  text-align: center;
+  z-index: 9999;
+  top: 350px;
+  background-color: rgba(0, 0, 0, 0.644);
+  cursor: pointer;
 }
 
 #expandingz .container {
@@ -11362,6 +11396,10 @@ FIXED: link-dark is a defined bootstrap key word
   height: 56px;
 }
 
+#contact .send-btn button {
+  max-width: 140px;
+}
+
 #insta-posts {
   position: relative;
 }
@@ -11400,6 +11438,9 @@ FIXED: link-dark is a defined bootstrap key word
 .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.footer-bottom p {
+  font-size: small;
 }
 
 footer .social-links a {
