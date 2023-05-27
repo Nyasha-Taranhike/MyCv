@@ -9,8 +9,8 @@ It is written in HTML, SCSS and Javascript. It is a static website that displays
   1. View Webpage
   2. Clone Repository
 - Usage
-  1. Home Page
-  2. Section on Home Page
+  1. The Home Page
+  2. Sections on The Home Page
 - Credits
 
 ### Installation
@@ -35,14 +35,14 @@ Entering the link for the Webpage will take you to the **Home page** (index.html
 Here is a screenshot of what you should expect to see:
 ![HomePage](/images/Screenshots/MyCv-Homepage.png).
 
-#### Sections on Home page
+#### Sections on The Home page
 
-In the **Home page** (index.html). You will be able to navigate across each section.
+On the **Home page** (index.html). You will be able to navigate across each section.
 
 Note that the Contact section is static and does not record the information you put in:
 ![Contact](/images/Screenshots/Contact.png).
 
-In the skills section of this page, if you click on specific skill you will be able to view all it's properties.
+In the skills section of this page, if you click on a specific skill you will be able to view all its properties.
 
 Here is a screenshot of what you should expect to see:
 ![Skills](/images/Screenshots/Skills.png).
@@ -79,7 +79,7 @@ by **Cloudflare**
 
 ##### jQuery
 
-For a few dynamic functionality I used the jQuery library
+For some more dynamic functionality, I used the jQuery library
 [jQuery](https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js)
 
 ##### Bootstrap
